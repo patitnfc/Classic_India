@@ -1,132 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Classic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:#e8d9d0 ;
-        }
-        .container {
-            text-align: center;
-            padding: 0px;
-        }
-        .cover {
-            position: relative;
-            background: url('https://i.ibb.co/9m1BhNvG/20250730-190221-0000.png') no-repeat center center; 
-            width: 100%;
-            height: 30vh; 
-            background-size: cover;
-            color: #fff;
-            margin: 0 auto;
-            border: 3px solid #fff;
-            border-radius: 5px;
-        }
-      .profile-container {
-            position: relative;
-            margin-top: 160px; /* Adjust to bring the profile image closer to the cover */
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            background: url('https://i.ibb.co/RG3TjKVX/Whats-App-Image-2025-07-29-at-00-06-47.jpg') no-repeat center center;
-            background-size: cover;
-            margin: 0 auto;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Classic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8d9d0;
+    }
 
-        .recipient-name {
-            margin-top: 70px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 26px;
-            font-weight: bold;
-          text-align: center;
-            letter-spacing: 1px;
-            color: ;
-        }
-      
-        .description {
-            margin: -28px auto;
-            font-size: 16px;
-            color:;
-            line-height: 1.5;
-            padding: 0 20px;
-            text-align: justify;
-            max-width: 600px;
-        }
+    .container {
+      text-align: center;
+      padding: 0;
+    }
 
-        .contact-options {
-            margin-top: 30px;
-          text-align: center;
-        }
-        .contact-options a {
-            display: inline-block;
-            margin: 15px;
-            text-decoration: none;
-            color: ;
-            text-align: center;
-        }
-        .contact-options img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 5px;
-          text-align: center;
-        }
-    </style>
+    .cover {
+      position: relative;
+      background: url('https://i.ibb.co/9m1BhNvG/20250730-190221-0000.png') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 30vh;
+      border: 3px solid #fff;
+      border-radius: 5px;
+    }
+
+    .profile-container {
+      position: relative;
+    }
+
+    .profile-image {
+      position: absolute;
+      left: 50%;
+      bottom: -75px;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      background: url('https://i.ibb.co/RG3TjKVX/Whats-App-Image-2025-07-29-at-00-06-47.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .recipient-name {
+      margin-top: 90px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #333;
+    }
+
+    .description {
+      margin: 20px auto;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+      padding: 0 20px;
+      text-align: justify;
+      max-width: 600px;
+    }
+
+    .description p {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .contact-heading {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .contact-options {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-options a {
+      text-decoration: none;
+      color: #333;
+      text-align: center;
+    }
+
+    .contact-options img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      background-color: #737373;
+      padding: 10px 0;
+    }
+
+    footer img {
+      width: 150px;
+      height: 80px;
+      border-radius: 10px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        bottom: -60px;
+      }
+
+      .recipient-name {
+        font-size: 22px;
+        margin-top: 70px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="cover">
-           <div class="profile-container">
-            <div class="profile-image"></div>  
-            </div>
-        </div>
-
-        <div class="recipient-name"> Classic India</div>
-
-        <div class="description">
-            <br><br>
-            <strong>Classic India</strong> brings export-quality clothing for kids aged 2 to 14, now available in India for the first time. From cozy nightwear to stylish leisurewear, every piece is soft, breathable, and made for comfort. Perfect for bedtime, playtime, or long travels, our designs keep kids happy wherever they go. Classic India is trusted worldwide and crafted for everyday ease.
- <strong>    <p style="text-align: center;"> Where comfort meets imagination.</p>  </strong>
-        </div>
-
-        <p style="margin-top: 55px; color: ; text-align: center;"<p>Contact Us:</p>
-
-        <div class="contact-options">
-          <a href="https://www.instagram.com/classic.india_?igsh=MXA3Z3pkNTA5YWx6ag==" target="_blank">
-                <img src="https://i.imgur.com/7438QC5.png" alt="Instagram Logo">
-                <div>Instagram</div>
-           
-            <a href="tel:+917415010015">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-phone-icon-download-in-svg-png-gif-file-formats--call-logo-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100768.png" alt="Call Logo">
-                <div>Call Us</div>
-            </a>
-             
-            <a href="https://wa.me/917415010015" target="_blank">
-                <img src="https://i.imgur.com/UCldjse.png" alt="WhatsApp Logo">
-                <div>WhatsApp</div>
-            </a>
-            <a href="mailto: classicindia53@gmail.com">
-                <img src="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png" alt="Gmail Logo">
-                <div>Email</div>
-            </a>
-            <a href="https://maps.app.goo.gl/9Mg8yEz9uKFV8mvg8" target="_blank">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp&w=128" alt="Location Pin Logo">
-                <div>Location</div>
-            </a>
-          
-            </a>
-        </div>
+  <div class="container">
+    <div class="cover">
+      <div class="profile-container">
+        <div class="profile-image"></div>
+      </div>
     </div>
 
-    <footer style="text-align: center; margin-top: 40px;background-color: #737373;">
-        <img src="https://imgur.com/nJhAado.png" alt="Footer Image" style="width: 150px; height: 80px; border-radius: 10px;">
-    </footer>
+    <div class="recipient-name">Classic India</div>
+
+    <div class="description">
+      <strong>Classic India</strong> brings export-quality clothing for kids aged 2 to 14, now available in India for the first time. From cozy nightwear to stylish leisurewear, every piece is soft, breathable, and made for comfort. Perfect for bedtime, playtime, or long travels, our designs keep kids happy wherever they go. Classic India is trusted worldwide and crafted for everyday ease.
+      <p>Where comfort meets imagination.</p>
+    </div>
+
+    <div class="contact-heading">Contact Us:</div>
+
+    <div class="contact-options">
+      <a href="https://www.instagram.com/classic.india_?igsh=MXA3Z3pkNTA5YWx6ag==" target="_blank">
+        <img src="https://i.imgur.com/7438QC5.png" alt="Instagram Logo">
+        <div>Instagram</div>
+      </a>
+
+      <a href="tel:+917415010015">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-phone-icon-download-in-svg-png-gif-file-formats--call-logo-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100768.png" alt="Call Logo">
+        <div>Call Us</div>
+      </a>
+
+      <a href="https://wa.me/917415010015" target="_blank">
+        <img src="https://i.imgur.com/UCldjse.png" alt="WhatsApp Logo">
+        <div>WhatsApp</div>
+      </a>
+
+      <a href="mailto:classicindia53@gmail.com">
+        <img src="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png" alt="Gmail Logo">
+        <div>Email</div>
+      </a>
+
+      <a href="https://maps.app.goo.gl/9Mg8yEz9uKFV8mvg8" target="_blank">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp&w=128" alt="Location Pin Logo">
+        <div>Location</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <img src="https://imgur.com/nJhAado.png" alt="Footer Image">
+  </footer>
 </body>
 </html>
